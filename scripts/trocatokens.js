@@ -3,7 +3,7 @@ document.getElementById('btnTrocar').addEventListener('click', () => {
   const resultado = document.getElementById('resultado');
 
   if (qtd > 0) {
-    resultado.textContent = `Você trocou ${qtd}kWh por ${qtd * 5} tokens.`;
+    resultado.textContent = `Você trocou ${qtd}tokens por ${qtd/5} kWh.`;
   } else {
     resultado.textContent = 'Quantidade inválida!';
   }
