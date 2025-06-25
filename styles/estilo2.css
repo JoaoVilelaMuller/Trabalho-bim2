@@ -13,6 +13,9 @@ h2 {
   text-align: center;
 }
 
+h1{ 
+  text-align: center;
+}
 #infoEnergia div,
 #historicoTransacoes li {
   background-color: #ffffff;
@@ -21,6 +24,9 @@ h2 {
   padding: 15px;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+#valor-saldo{
+  text-align: center;
 }
 
 button {

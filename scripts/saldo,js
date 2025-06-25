@@ -1,0 +1,30 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const saldo = { tokens: 120 };
+
+
+  const valorSaldo = document.getElementById("valor-saldo");
+  const formCompra = document.getElementById("form-compra");
+  const qtdInput = document.getElementById("quantidade-compra");
+
+  function atualizarSaldo() {
+    if (valorSaldo) {
+      valorSaldo.innerHTML = `Tokens disponíveis: <strong>${saldo.tokens}</strong>`;
+    }
+  }
+
+  if (formCompra && qtdInput) {
+    formCompra.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const quantidade = parseInt(qtdInput.value);
+      if (!isNaN(quantidade) && quantidade > 0) {
+        saldo.tokens += quantidade;
+        atualizarSaldo();
+        qtdInput.value = "";
+      }
+    });
+  }
+
+
+  atualizarSaldo();
+});
+S
