@@ -15,7 +15,7 @@ function renderizarRegistros() {
     const btnExcluir = document.createElement('button');
     btnExcluir.textContent = 'Excluir';
     btnExcluir.onclick = () => {
-      registros.splice(index, 1); // remove o registro pelo índice
+      registros.splice(index, 1); //remove o registro pelo índice
       renderizarRegistros(); // atualiza a tela
     };
 
