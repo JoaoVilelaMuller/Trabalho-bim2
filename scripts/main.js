@@ -17,13 +17,7 @@ sol.addEventListener("mouseout", () => {
   sol.style.transform = "scale(1)"; // volta ao tamanho normal quando tira o mouse
 });
 
-const textoCaixa2 = document.createElement("p"); // cria um parágrafo novo
-textoCaixa2.textContent = "Utilizamos blockchain para registrar e valorizar a energia excedente, criando um ecossistema sustentável e transparente."; // define o texto explicativo
-
-caixa2.appendChild(tituloCaixa2); // coloca o título na caixa
-caixa2.appendChild(textoCaixa2); // coloca o parágrafo na caixa
-
-const paragrafos = document.querySelectorAll("p"); // pega todos os parágrafos da página
-const ultimoParagrafo = paragrafos[paragrafos.length - 1]; // seleciona o último parágrafo
+const paragrafos = document.querySelectorAll("p"); // pega todos os paragrafos da pagina
+const ultimoParagrafo = paragrafos[paragrafos.length - 1]; // seleciona o ultimo parágrafo
 ultimoParagrafo.style.marginTop = "2rem"; // adiciona um espaçamento em cima
-ultimoParagrafo.style.lineHeight = "1.6"; // aumenta o espaçamento entre as linhas pra melhor leitura
+ultimoParagrafo.style.lineHeight = "1.6"; // aumenta o espaçamento entre as linhas
